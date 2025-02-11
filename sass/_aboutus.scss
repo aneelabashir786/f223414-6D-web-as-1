@@ -1,0 +1,65 @@
+.aboutus{
+    height : 80vh;
+    background-color: rgb(240, 230, 230);
+    grid-column : 1 / -1;
+    margin-top: -25vh;
+    &__content{
+        position: absolute;
+        left:50%;
+        top:100%;
+        transform: translate(-50% , -50%);
+        text-align: center;
+
+        &--para1{
+            position: absolute;
+            left:10%;
+            top:80%;
+            transform: translate(-50% , -50%);
+            text-align: left;
+    
+        }
+        &--para2{
+            position: absolute;
+            left:10%;
+            top:100%;
+            transform: translate(-50% , 50%);
+            text-align: left;
+        }
+    }
+}
+.photo{
+
+    position: absolute;
+    left : 60%;
+    top : 110%;
+    transform: translate(0 , 55%);
+
+    &__composition{
+        // width:55%;
+        box-shadow:0 1rem 4rem rgba(black , 0.3);
+        position:absolute;
+        z-index: 10;
+        transition: all 0.2s;
+        outline-offset: 2rem;
+        &--p1{
+            left:0;
+            top:-2rem;
+        }
+        &--p2{
+            left:15rem;
+            top:2rem; 
+        }
+
+        &:hover{
+            z-index: 20;
+            transform:scale(1.05) translateY(0.5rem);
+            box-shadow:0 1rem 4rem rgba(black , 0.8);
+            outline: 1.5rem solid #101d2c;
+            border-radius: 5px;
+        }   
+    }
+    &:hover &__photo:not(:hover){
+        transform: scale(0.9);
+    }
+}
+    

@@ -1,0 +1,40 @@
+.heading-1{
+    font-size:6rem;
+    color : $color-secondary;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+.heading-5{
+    font-size:1.5rem;
+    color : $color-secondary;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+     line-height: 1;
+}
+.paragraph{
+    color:#000;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+
+    &--light{
+     color:$color-grey-light-2;
+    }
+}
+.heading-secondary{
+    font-size: 3.5rem;
+    font-weight: 700;
+    display:inline block;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right , rgba($color-secondary-light , 0.8) , rgba($color-secondary , 0.8));
+    -webkit-background-clip: text;
+    color:transparent;
+    transition : all .2s;
+    letter-spacing: 1.5px;
+   
+   &:hover{
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1.5rem 2rem rgba(black ,  0.2 );
+   }
+}

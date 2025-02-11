@@ -1,0 +1,31 @@
+.intro{
+    height : 80vh;
+     grid: 1 / -1;
+     background-image: linear-gradient(to right bottom,rgba($color-grey-light-1, 0.6),rgba($color-grey-light-2, 0.6) ) , url(../img/download.jpeg);
+     background-size : cover ;
+     background-position: top;
+    clip-path:polygon(0 0 , 100% 0 , 100% 50rem, 0  100%) ;
+  
+
+    &__content{
+        position: absolute;
+        left:60%;
+        top:40%;
+         transform: translate(-50% , -50%);
+        text-align: center;
+    }
+    &__photo-box{
+        position : absolute;
+        position:absolute;
+        top:20%;
+        left:7%;
+
+    }
+    &__photo{
+        height : 350px;
+        opacity: 10;
+        border-radius: 50%;
+    }
+
+}
+

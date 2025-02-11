@@ -1,0 +1,101 @@
+.header{
+    background-color: rgb(173, 164, 164);
+    width : 85.5%;
+    padding : 1rem 10rem;
+    position : fixed;
+    top: 0 ;
+    z-index: 5000;
+
+    &__content{
+        display: grid;
+        align-items: center;
+        grid-template-columns:  10rem 1fr  30rem max-content max-content;
+    }
+    &__list{
+        list-style: none;
+       display: grid;
+       grid-template-columns: repeat(7 , max-content);
+       gap : 2rem;
+       
+    }
+    &__img{
+        height : 5rem;
+        width : 5rem;
+    }
+    
+    &__link{
+        text-decoration : none ;
+        color: black;
+        background-color: $color-grey-light-1;
+        padding : 1rem;
+        border-radius: 10%;
+    }
+    &__btn1{
+         display: grid;
+         grid-template-columns: repeat(2 , max-content);
+         gap:2rem;
+         &--primary1{
+            border-radius: 30%;
+            background-color: $color-secondary;
+            color: white;
+            padding: 1rem;
+         }
+    }
+}
+.search{
+    flex: 0 0 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // @media only screen and (max-width:$bp-smallest){
+    //    order:1;
+    //    flex: 0 0 100%;
+    //    background-color: var(--color-grey-light-2);
+
+    // }
+
+   &__input{
+       font-family: inherit;
+       font-size: inherit;
+       background-color: $color-grey-light-1;
+       border: none;
+       color:inherit;
+       border-radius: 100px;
+       padding:0.7rem 2rem;
+       width:100%;
+       transition: all 0.2s;
+       margin-right: -3.25rem;
+       &:focus{
+           outline: none;
+           width: 100%;
+           background-color: $color-grey-light-1;
+       }
+       &::-webkit-input-placeholder{
+           font-weight: 100;
+           color:$color-grey-light-2;
+       }
+   }
+   &__input:focus + &__button{
+       background-color: $color-grey-light-1;
+   }
+   &__button {
+       border: none;
+       background-color: $color-grey-light-1;
+
+       &:focus {
+           outline: none;
+       }
+
+       &:active {
+           transform: translateY(2px);
+       }
+   }
+
+   &__icon {
+       height: 2rem;
+       width: 2rem;
+       fill: $color-grey-dark-1;
+   }   
+}
